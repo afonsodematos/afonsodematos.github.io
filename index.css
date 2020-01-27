@@ -1,0 +1,745 @@
+body {
+    background-color: #D4D4D4;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    font-family: 'Arimo', sans-serif;
+    width: 100%;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@font-face {
+    font-family: junicode;
+    src: url(fonts/junicode.ttf);
+}
+
+#aquad {
+    width: 50px;
+    margin-left: -25px;
+    height: 50px;
+    background-color: #D4D4D4;
+    position: fixed;
+    top: 120px;
+    left: 6%;
+    box-shadow: 5px 5px 20px black;
+    z-index: 10;
+}
+
+#aquad:hover {
+    box-shadow: 5px 5px 5px black;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+#menu {
+    position: fixed;
+    width: 40%;
+    height: 100vh;
+    overflow: scroll;
+}
+
+#linha {
+    position: fixed;
+    width: 1px;
+    height: 95vh;
+    left: 40%;
+    top: 2.5vh;
+    background-color: black;
+    z-index: 10;
+}
+
+#projetos {
+    position: absolute;
+    width: 60%;
+    height: 100vh;
+    left: 40%;
+}
+
+.nome {
+    position: absolute;
+    left: 15%;
+    margin-left: -45px;
+    text-align: center;
+    font-size: 13px;
+    color: blue;
+    width: 90px;
+}
+
+
+sup, span{
+    pointer-events: none;
+    user-select: none;
+}
+
+
+/* CSS DA LISTA */
+
+.lista {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 200px;
+    left: 15%;
+    width: 90%;
+    justify-content: space-between;
+
+}
+
+.item {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 11px;
+    cursor: pointer;
+}
+
+.traco {
+    background-color: black;
+    width: 50px;
+    margin-left: -25px;
+    height: 1px;
+    margin-top: 8px;
+}
+
+.nomeproj {
+    position: relative;
+    width: 80%;
+    height: 10%;
+    font-family: junicode;
+    font-size: 17px;
+    line-height: 17px;
+    margin-left: 2.5%;
+}
+
+sup {
+    vertical-align: super;
+    font-size: 10px;
+}
+
+.descricao {
+    position: relative;
+    font-size: 12px;
+    line-height: 13px;
+    font-family: 'Arimo', sans-serif;
+    color: blue;
+    opacity: 0;
+}
+
+.nomeproj:hover .descricao {
+    opacity: 1;
+    transition-duration: 0.3s;
+}
+
+
+
+
+
+/*-------------------------------------------------------------------*/
+
+/* CSS DOS PROJETOS EM SI */
+
+.cont_proj {
+    width: 95%;
+    margin-bottom: 13px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sobre {
+    position: relative;
+}
+
+
+.titulo {
+    margin-top: 30px;
+    margin-bottom: 14px;
+    width: 100%;
+    font-family: junicode;
+    font-size: 22px;
+    line-height: 18px;
+}
+
+.bigsup {
+    vertical-align: super;
+    font-size: 13px;
+}
+
+.creds {
+    width: 100%;
+    font-family: 'Arimo', sans-serif;
+    font-size: 15px;
+    line-height: 16px;
+}
+
+.descri {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+/*------------------------*/
+/* LINKS CSS*/
+
+/* unvisited link */
+a.two:link {
+    color: black;
+    text-underline-position: below;
+}
+
+/* visited link */
+a.two:visited {
+    color: black;
+}
+
+/* mouse over link */
+a.two:hover {
+    color: blue;
+}
+
+/* selected link */
+a.two:active {
+    color: black;
+}
+
+/*------------------------*/
+
+.pheight {
+    line-height: 14px;
+}
+
+.colu {
+    width: 50%;
+    font-family: 'Arimo', sans-serif;
+    font-size: 13px;
+    line-height: 14px;
+    margin-right: 10px;
+}
+
+/*------------------------*/
+
+#logoittakes {
+    position: absolute;
+    height: 35%;
+    width: 35%;
+    background-image: url(imagens/ittakes_sized/ittakes_logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -125px;
+    margin-left: 55%;
+    z-index: 10;
+    pointer-events: none;
+}
+
+#logotowards {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    background-image: url(imagens/towards/towards_logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -125px;
+    margin-left: 65%;
+    z-index: 10;
+    pointer-events: none;
+}
+
+#logosemmelweis {
+    position: absolute;
+    height: 33%;
+    width: 33%;
+    background-image: url(imagens/semmelweis/semmelweis.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -170px;
+    margin-left: 40%;
+    z-index: 10;
+    pointer-events: none;
+}
+
+#logosleep {
+    position: absolute;
+    height: 50%;
+    width: 30%;
+    background-image: url(imagens/sleepy/sleep_logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -230px;
+    margin-left: 64%;
+    z-index: 10;
+    pointer-events: none;
+}
+
+
+#logoextropy {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    background-image: url(imagens/extropy/extropy_logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -140px;
+    margin-left: 65%;
+    z-index: 10;
+    pointer-events: none;
+}
+
+#logocast {
+    position: absolute;
+    height: 40%;
+    width: 10%;
+    background-image: url(imagens/cast/castlogo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -227px;
+    margin-left: 70%;
+    z-index: 10;
+    pointer-events: none;
+
+}
+
+
+#logonaomi {
+    position: absolute;
+    height: 33%;
+    width: 33%;
+    background-image: url(imagens/naomi/logonaomi.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -200px;
+    margin-left: 60%;
+    z-index: 10;
+    pointer-events: none;
+
+}
+
+
+#logocast2050 {
+    position: absolute;
+    height: 80%;
+    width: 33%;
+    background-image: url(imagens/cast2050/cast2050logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -300px;
+    margin-left: 60%;
+    z-index: 10;
+    pointer-events: none;
+
+}
+
+#logobeyond {
+    position: absolute;
+    height: 58%;
+    width: 20%;
+    background-image: url(imagens/beyondd/beyondlogo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -250px;
+    margin-left: 70%;
+    z-index: 10;
+    pointer-events: none;
+
+}
+
+/*-------------------------------------------------------------------*/
+
+/* CSS DOS SLIDESHOWS TODOS */
+
+
+#contentor_expo {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-right: auto;
+}
+
+#expo_img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+}
+
+#contentor_pub {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-right: auto;
+    margin-top: 14px;
+
+}
+
+#pub_img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#nav_cont {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#nav_button {
+    position: absolute;
+    display: flex;
+    transition-duration: 0.5s;
+    width: 6%;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+#nav_button:hover {
+    filter: blur;
+}
+
+.shadow {
+    filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, .7));
+}
+
+.left {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+}
+
+.right {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+}
+
+
+#contentor_proj {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-right: auto;
+    margin-top: 14px;
+    margin-bottom: 8px;
+}
+
+#proj_img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+}
+
+
+#contentor_codex {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-right: auto;
+    margin-top: 14px;
+    margin-bottom: 8px;
+
+}
+
+#codex_img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+}
+
+
+#contentor_mp {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-right: auto;
+    margin-top: 14px;
+    margin-bottom: 8px;
+
+}
+
+#mp_img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+}
+
+
+#contentor_mind {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-right: auto;
+    margin-top: 14px;
+    margin-bottom: 8px;
+
+}
+
+#mind_img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+}
+
+
+#contentor_only {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-right: auto;
+    margin-top: 14px;
+    margin-bottom: 8px;
+
+}
+
+#only_img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+}
+
+#contentor_sleep {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-right: auto;
+    margin-top: 14px;
+    margin-bottom: 8px;
+
+}
+
+#sleep_img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+}
+
+#contentor_mag {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-right: auto;
+    margin-top: 14px;
+    margin-bottom: 8px;
+
+}
+
+#mag_img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+}
+
+#contentor_fotos {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-right: auto;
+    margin-top: 14px;
+    margin-bottom: 8px;
+
+}
+
+#fotos_img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+}
+
+
+#contentor_castmag {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-right: auto;
+    margin-top: 14px;
+    margin-bottom: 8px;
+
+}
+
+#castmag_img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+}
+
+#contentor_beyond {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin-right: auto;
+    margin-top: 14px;
+    margin-bottom: 8px;
+
+}
+
+#beyond_img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+}
+
+
+/*-------------------------------------------------------------------*/
+
+/*CSS PARA AS IMAGENS, VIDEOS E TEXTOS GRANDES*/
+
+
+.imgfull {
+    width: 100%;
+    margin-top: 14px;
+}
+
+.imgscaled {
+    margin-top: 14px;
+    width: 100%;
+    height: 520px;
+    object-fit: scale-down;
+}
+
+.essays {
+    width: 70%;
+    font-family: junicode;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 25px;
+    text-indent: 50px;
+    text-align: justify;
+}
+
+.i_juni {
+    font-family: junicode-italic;
+}
+
+
+
+.about {
+    width: 75%;
+    font-family: junicode;
+    font-size: 22px;
+    line-height: 23px;
+    margin-bottom: 25px;
+    text-indent: 0px;
+
+}
+
+
+/*-------------------------------------------------------------------*/
+/*CSS PARA AS LEGENDAS*/
+
+.legenda {
+    width: 70%;
+    font-family: junicode;
+    font-size: 14px;
+    line-height: 15px;
+    margin-bottom: 25px;
+}
+
+.legenda_videos {
+    width: 70%;
+    font-family: junicode;
+    font-size: 14px;
+    line-height: 15px;
+    margin-top: 8px;
+    margin-bottom: 25px;
+}
+
+/*-------------------------------------------------------------------*/
+
+
+/* CSS ESPECÍFICO*/
+
+.flex {
+    display: flex;
+}
+
+.none {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 860px){
+    
+body {
+    display: flex;
+    flex-direction: row;
+}
+    
+.descri{
+    display: flex;
+    flex-direction:column;
+    width: 90%;
+}
+
+.colu {
+    width: 100%;
+        
+}
+
+
+    
+    
+    
+}
+
+
+@media screen and (max-width: 480px){
+    
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+
+#menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+    z-index: 5;
+    
+}
+
+
+#projetos {
+    display: none;
+    position: absolute;
+    width: 97.5%; 
+    height: 100vh; 
+    left: 2.5%;
+    z-index: 1;
+}
+
+#linha {
+    display: none;
+    pointer-events: none;
+}
+    
+    
+    
+}
+
