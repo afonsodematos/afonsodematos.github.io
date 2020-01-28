@@ -70,6 +70,12 @@ body {
     cursor: 
 }
 
+.nome:hover {
+    text-shadow: 2px 2px 8px black;
+    transition-duration: 0.5s;
+    cursor: pointer;
+        
+    }
 
 sup, span{
     pointer-events: none;
