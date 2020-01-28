@@ -67,6 +67,7 @@ body {
     font-size: 13px;
     color: blue;
     width: 90px;
+    cursor: 
 }
 
 
@@ -84,7 +85,7 @@ sup, span{
     flex-direction: column;
     top: 200px;
     left: 15%;
-    width: 90%;
+    width: 80%;
     justify-content: space-between;
 
 }
@@ -151,6 +152,7 @@ sup {
 
 .sobre {
     position: relative;
+    width: 60%;
 }
 
 
@@ -723,6 +725,20 @@ body {
     z-index: 5;
     
 }
+    
+#aquad {
+    width: 50px;
+    margin-left: -25px;
+    height: 50px;
+    background-color: #D4D4D4;
+    position: fixed;
+    top: 120px;
+    left: 6%;
+    box-shadow: 5px 5px 20px black;
+    z-index: 10;
+    opacity: 0.9;
+}
+
 
 
 #projetos {
@@ -739,6 +755,142 @@ body {
     pointer-events: none;
 }
     
+#logoittakes {
+    position: absolute;
+    height: 40%;
+    width: 40%;
+    background-image: url(imagens/ittakes_sized/ittakes_logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -155px;
+    margin-left: 50%;
+    z-index: 10;
+    pointer-events: none;
+}
+
+#logotowards {
+    position: absolute;
+    height: 30%;
+    width: 30%;
+    background-image: url(imagens/towards/towards_logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -115px;
+    margin-left: 60%;
+    z-index: 10;
+    pointer-events: none;
+}
+
+#logosemmelweis {
+    position: absolute;
+    height: 33%;
+    width: 33%;
+    background-image: url(imagens/semmelweis/semmelweis.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 100px;
+    margin-left: 10%;
+    z-index: 10;
+    pointer-events: none;
+}
+
+#logosleep {
+    position: absolute;
+    height: 50%;
+    width: 35%;
+    background-image: url(imagens/sleepy/sleep_logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 200px;
+    margin-left: 30%;
+    z-index: 10;
+    pointer-events: none;
+}
+
+
+#logoextropy {
+    position: absolute;
+    height: 25%;
+    width: 25%;
+    background-image: url(imagens/extropy/extropy_logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -90px;
+    margin-left: 65%;
+    z-index: 10;
+    pointer-events: none;
+}
+
+#logocast {
+    position: absolute;
+    height: 40%;
+    width: 15%;
+    background-image: url(imagens/cast/castlogo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -229px;
+    margin-left: 75%;
+    z-index: 10;
+    pointer-events: none;
+
+}
+
+
+#logonaomi {
+    position: absolute;
+    height: 33%;
+    width: 33%;
+    background-image: url(imagens/naomi/logonaomi.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -100px;
+    margin-left: 60%;
+    z-index: 10;
+    pointer-events: none;
+
+}
+
+
+#logocast2050 {
+    position: absolute;
+    height: 50%;
+    width: 20%;
+    background-image: url(imagens/cast2050/cast2050logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -280px;
+    margin-left: 74%;
+    z-index: 10;
+    pointer-events: none;
+
+}
+
+#logobeyond {
+    position: absolute;
+    height: 58%;
+    width: 18%;
+    background-image: url(imagens/beyondd/beyondlogo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -170px;
+    margin-left: 70%;
+    z-index: 10;
+    pointer-events: none;
+
+}
+    
+.essays {
+    width: 98%;
+}
     
     
 }

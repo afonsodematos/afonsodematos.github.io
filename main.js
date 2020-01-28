@@ -46,34 +46,47 @@ function openproj() {
 
 /* FUNÇÕES PARA ABRIR E FECHAR O MENU/PROJETOS NO MOBILE*/
 
+var x = window.matchMedia("(max-width: 860px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
+
+
+
 function projetaparecer() {
-    var proj = document.getElementById("projetos");
-    var menu = document.getElementById("menu")
-    var nom = document.getElementById("asobre");
-    var lis = document.getElementById("lislis");
-    var quad = document.getElementById("aquad");
-    
-    proj.style.display = "block";
-    nom.style.display = "none";
-    lis.style.display = "none";
-    proj.style.pointerEvents = "all";
-    menu.style.pointerEvents = "none";
-    quad.style.pointerEvents = "all";
+    if (x.matches) { // If media query matches
+        var proj = document.getElementById("projetos");
+        var menu = document.getElementById("menu")
+        var nom = document.getElementById("asobre");
+        var lis = document.getElementById("lislis");
+        var quad = document.getElementById("aquad");
+
+        proj.style.display = "block";
+        nom.style.display = "none";
+        lis.style.display = "none";
+        proj.style.pointerEvents = "all";
+        menu.style.pointerEvents = "none";
+        quad.style.pointerEvents = "all";
+    }
+
+
 }
 
 function menuaparecer() {
-    var proj = document.getElementById("projetos");
-    var menu = document.getElementById("menu")
-    var nom = document.getElementById("asobre");
-    var lis = document.getElementById("lislis");
-    var quad = document.getElementById("aquad");
-    
-    proj.style.display = "none";
-    nom.style.display = "block";
-    lis.style.display = "block";
-    proj.style.pointerEvents = "none";
-    menu.style.pointerEvents = "all";
-    quad.style.pointerEvents = "all";
+    if (x.matches) { // If media query matches
+        var proj = document.getElementById("projetos");
+        var menu = document.getElementById("menu")
+        var nom = document.getElementById("asobre");
+        var lis = document.getElementById("lislis");
+        var quad = document.getElementById("aquad");
 
-    
+        proj.style.display = "none";
+        nom.style.display = "block";
+        lis.style.display = "block";
+        proj.style.pointerEvents = "none";
+        menu.style.pointerEvents = "all";
+        quad.style.pointerEvents = "all";
+    }
+
+
+
 }
