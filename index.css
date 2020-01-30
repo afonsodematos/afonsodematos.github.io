@@ -380,7 +380,7 @@ a.two:active {
 #expo_img {
     position: relative;
     width: 100%;
-    height: auto;
+    height: 100%;
     margin-bottom: 0;
 }
 
@@ -396,7 +396,7 @@ a.two:active {
 #pub_img {
     position: relative;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 #nav_cont {
@@ -408,7 +408,6 @@ a.two:active {
 
 #nav_button {
     position: absolute;
-    display: flex;
     transition-duration: 0.5s;
     width: 6%;
     cursor: pointer;
@@ -448,7 +447,7 @@ a.two:active {
 #proj_img {
     position: relative;
     width: 100%;
-    height: auto;
+    height: 100%;
     margin-bottom: 0;
 }
 
@@ -466,7 +465,7 @@ a.two:active {
 #codex_img {
     position: relative;
     width: 100%;
-    height: auto;
+    height: 100%;
     margin-bottom: 0;
 }
 
@@ -484,7 +483,7 @@ a.two:active {
 #mp_img {
     position: relative;
     width: 100%;
-    height: auto;
+    height: 100%;
     margin-bottom: 0;
 }
 
@@ -502,7 +501,7 @@ a.two:active {
 #mind_img {
     position: relative;
     width: 100%;
-    height: auto;
+    height: 100%;
     margin-bottom: 0;
 }
 
@@ -520,7 +519,7 @@ a.two:active {
 #only_img {
     position: relative;
     width: 100%;
-    height: auto;
+    height: 100%;
     margin-bottom: 0;
 }
 
@@ -537,7 +536,7 @@ a.two:active {
 #sleep_img {
     position: relative;
     width: 100%;
-    height: auto;
+    height: 100%;
     margin-bottom: 0;
 }
 
@@ -554,7 +553,7 @@ a.two:active {
 #mag_img {
     position: relative;
     width: 100%;
-    height: auto;
+    height: 100%;
     margin-bottom: 0;
 }
 
@@ -571,7 +570,7 @@ a.two:active {
 #fotos_img {
     position: relative;
     width: 100%;
-    height: auto;
+    height: 100%;
     margin-bottom: 0;
 }
 
@@ -589,7 +588,7 @@ a.two:active {
 #castmag_img {
     position: relative;
     width: 100%;
-    height: auto;
+    height: 100%;
     margin-bottom: 0;
 }
 
@@ -606,7 +605,7 @@ a.two:active {
 #beyond_img {
     position: relative;
     width: 100%;
-    height: auto;
+    height: 100%;
     margin-bottom: 0;
 }
 
@@ -897,7 +896,7 @@ body {
 .essays {
     width: 98%;
 }
+
     
-    
-}
+
 
